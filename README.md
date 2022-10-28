@@ -14,10 +14,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+
+
+<img src="./src/_shared/assets/images/localhost_3000_.png" height="500">
+
+<img src="../src/_shared/assets/images/../../../../custxmer-webapp/src/_shared/assets/images/localhost_3000_(iPhone%2012%20Pro).png" height="1000">
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+<img src="./src/_shared/assets/images/web_test.png" width="400">
 
 ### `npm run build`
 

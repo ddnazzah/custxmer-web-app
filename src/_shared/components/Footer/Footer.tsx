@@ -14,7 +14,7 @@ interface Props {}
 
 const Footer = (props: Props) => {
     const { pathname } = useLocation();
-    const [isToggle, setIsToggle] = useState(true);
+    const [isToggle, setIsToggle] = useState(false);
 
     const onToggle = () => {
         setIsToggle(!isToggle);
@@ -39,9 +39,9 @@ const Footer = (props: Props) => {
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                     </button>
                     <ul className="hidden md:flex p-4 rounded-lg border border-gray-100 flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
@@ -79,7 +79,7 @@ const Footer = (props: Props) => {
                         id="navbar-sticky">
                         <ul className="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                             {routes.map(route => (
-                                <li>
+                                <li key={route.name}>
                                     <Link
                                         to={route.path}
                                         className={`block py-2 pr-4 pl-3 text-white rounded hover:underline underline-offset-4 md:hover:bg-transparent  md:p-0 uppercase ${

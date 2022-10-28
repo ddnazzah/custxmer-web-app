@@ -54,7 +54,7 @@ const Carousel = (props: Props) => {
     };
 
     return (
-        <section className="p-12 mb-10">
+        <section className="px-3 md-px-0 mb-10" data-testid="carousel">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="relative mt-10 bg-gray-200">
                     {features.map((feature, featIdx) => (

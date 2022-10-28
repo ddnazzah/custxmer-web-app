@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { Carousel } from '..';
 
-test('renders learn react link', () => {
+test('renders correctly', () => {
     render(<Carousel />);
-    const linkElement = screen.getByText(/learn react/i);
+    const linkElement = screen.getByTestId('carousel');
     expect(linkElement).toBeInTheDocument();
 });

@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Header } from '..';
 
-test('renders learn react link', () => {
-    render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+test('renders correctly', () => {
+    render(
+        <Router>
+            <Header />
+        </Router>,
+    );
+    const linkElement = screen.getAllByText(/Home/i);
+    expect(linkElement).toHaveLength(2);
 });
